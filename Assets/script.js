@@ -3,32 +3,45 @@
 // in the html.
 
 
-let saveBtn = $('.saveBtn');
 
 
-let time = dayjs().format('dddd, MMMM D YYYY, h:mm:ss a');
-
+// this shows the current date and time
+let time = dayjs().format('dddd, MMMM D YYYY, h:mm a');
 $('#currentDay').text(time);
-
-
+// this is shows where the current time is using the id and dayjs
 let currentRow = $('#hour-' + dayjs().format('H')) 
-
-
-
-
+// this adds class present to current time and turns row to red
 currentRow.addClass('present'); 
+// this adds class to past and turns past time to grey
 currentRow.prevAll('.row').addClass('past');
+// this adds class to future and turns future time to green
 currentRow.nextAll('.row').addClass('future');
 
 
+// function stored() {
+//   localStorage.setItem('.row', JSON.stringify(row))
+//   console.log('hi')
+
+let saveBtn = $('.saveBtn');
+
+saveBtn.on('click', function () {
+
+$(this).text('Your ' + $(this).siblings('div').text() + ' has been saved')
 
 
 
 
+  localStorage.setItem($(this).parents().attr('id'), $(this).siblings('textarea').val());
+console.log();
 
+})
 
+for (let index = 9; index < 18; index++) {
 
+$('#hour-' + index).children('textarea').val(localStorage.getItem('hour-' + index));
+  // console.log(localStorage.getItem('hour-' + index))
 
+}
 
 
 
