@@ -1,46 +1,31 @@
 // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
 // in the html.
-let pastClass = $('#past');
-let presentClass = $('#present');
-let futureClass = $('#future');
+
 
 let saveBtn = $('.saveBtn');
 
 
-// let time = dayjs().format('dddd, MMMM D YYYY, h:mm:ss a');
-// console.log(time);
-// $('#currentDay').text(time);
+let time = dayjs().format('dddd, MMMM D YYYY, h:mm:ss a');
 
-// let hour9El = $('time-block');
-// // time-block.addClass('past')
+$('#currentDay').text(time);
 
-  console.log(dayjs().format('H') == 13);
-if (dayjs().format('H') < 9) {
-return '.past'; {
 
-}else if (dayjs().format('H') < 9) {
-
-}
-} else if (dayjs().format('H') > 12 || dayjs().format('H') < 5) {
-  
-} else {
-  
-
- };
+let currentRow = $('#hour-' + dayjs().format('H')) 
 
 
 
 
-// let hour10El = $('#hour-10');
-// hour10El.addClass('present')
+currentRow.addClass('present'); 
+currentRow.prevAll('.row').addClass('past');
+currentRow.nextAll('.row').addClass('future');
 
-// let hour11El = $('#hour-11');
-// hour11El.addClass('future')
 
-// saveBtn.on('click', function () {
-// console.log('hello');
-// })
+
+
+
+
+
 
 
 
