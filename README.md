@@ -12,7 +12,7 @@ N/A
 # Usage
 The user will start their day with the 9AM slot and fill out all the daily tasks that they need to get done by 5PM. If the user has some tasks to do at 9AM they can write it in the box next to the scheduled time and then click save. Once saved, it will be put into the local storage where it can be held. If the user refreshes the page with their daily tasks, the user can ensure that their list of things to do will not vanash, thanks to the save button. 
 
-
+![Work Day Schedule](Assets/workDaySchedule.PNG)
 
 
 # Credits

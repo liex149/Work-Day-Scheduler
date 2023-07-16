@@ -12,11 +12,9 @@ currentRow.nextAll('.row').addClass('future');
 // this is for hours not rpesent on the schedule to make the schedule grey
 if (dayjs().format('H') < 9) {
   $('.row').addClass('future')
-
 } else if (dayjs().format('H') > 17) {
   $('.row').addClass('past')
 };
-
 // this is a button
 let saveBtn = $('.saveBtn');
 saveBtn.on('click', function () {
@@ -29,5 +27,4 @@ saveBtn.on('click', function () {
 })
 for (let index = 9; index < 18; index++) {
   $('#hour-' + index).children('textarea').val(localStorage.getItem('hour-' + index));
-
 }
