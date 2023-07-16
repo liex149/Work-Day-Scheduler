@@ -3,6 +3,12 @@ body {
   font-size: 16px;
 }
 
+header  {
+  background-color: antiquewhite;
+  text-align: center;
+}
+
+
 textarea {
   background: transparent;
   border: none;

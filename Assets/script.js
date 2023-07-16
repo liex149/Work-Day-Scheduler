@@ -1,5 +1,5 @@
 // this shows the current date and time
-let time = dayjs().format('dddd, MMMM D YYYY, h:mm a');
+let time = dayjs().format('dddd, MMMM D YYYY');
 $('#currentDay').text(time);
 // this is shows where the current time is using the id and dayjs
 let currentRow = $('#hour-' + dayjs().format('H'))
