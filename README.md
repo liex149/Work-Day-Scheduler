@@ -4,7 +4,7 @@
 This is a work day schedule for those who work 9AM to 5PM who likes to stay organized. If the time is on present time the schedule will light up red advising you that this is the current time and the tasks to do at that time. If the schedule is green then that means time has not come yet. Once the time has past, a grey background will pop up advising that the task has been done. With this daily schedule, you will surely know that you will stay on task. 
 
 
-Link: 
+Link: https://liex149.github.io/Work-Day-Scheduler/
 
 # Installation
 N/A
